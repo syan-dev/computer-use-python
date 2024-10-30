@@ -1,0 +1,22 @@
+[build-system]
+requires      = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cupi"
+version = "0.0.2"
+description = "Python Package Installation for ClaudeAI Computer Use."
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "anthropic[bedrock,vertex]>=0.37.1",
+    "pillow",
+    "PyAutoGUI",
+]
+requires-python = ">=3.8"
+
+[project.scripts]
+cupi = "cupi.main:main"
