@@ -2,7 +2,7 @@
 
 [![PyPI version](https://badge.fury.io/py/cupi.svg)](https://badge.fury.io/py/cupi)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL](https://img.shields.io/badge/License-GPL-yellow.svg)](https://opensource.org/licenses/GPL)
 
 CUPI (Computer Use Python Installer) enables seamless integration of Claude AI's computer control capabilities without the need for Docker or virtual machines. Run Claude AI directly on your native operating system with just Python.
 
