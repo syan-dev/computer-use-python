@@ -6,6 +6,9 @@
 
 CUPI (Computer Use Python Installer) enables seamless integration of Claude AI's computer control capabilities without the need for Docker or virtual machines. Run Claude AI directly on your native operating system with just Python.
 
+
+![CUPI Demo](images/cupi.gif)
+
 ## ✨ Features
 
 - 🚀 Native OS support (Windows, MacOS, Linux)
