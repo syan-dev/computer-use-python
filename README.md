@@ -143,5 +143,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 📚 [Documentation](https://github.com/syan-dev/computer-use-python-installer/wiki)
 - 🐛 [Issue Tracker](https://github.com/syan-dev/computer-use-python-installer/issues)
-- 💬 [Discussions](https://github.com/syan-dev/computer-use-python-installer/discussions)
 
