@@ -1,14 +1,15 @@
-import os
-import json
 import base64
+import json
+import os
 from pathlib import Path
 from typing import Callable, Dict
+
 from anthropic import APIResponse
 from anthropic.types.beta import BetaMessage
 
 from cupi.computer_use_demo.tools import ToolResult
-from cupi.logger import ConversationLogger
 from cupi.config import Config
+from cupi.logger import ConversationLogger
 
 
 def create_callbacks(logger: ConversationLogger, config: Config) -> Dict[str, Callable]:
@@ -17,15 +18,14 @@ def create_callbacks(logger: ConversationLogger, config: Config) -> Dict[str, Ca
             message = content_block.get("text")
             print("Assistant:", message)
             if config.verbose:
-                print(
-                    f"[DEBUG] Content block: {json.dumps(content_block, indent=2)}")
+                print(f"[DEBUG] Content block: {json.dumps(content_block, indent=2)}")
             logger.add_message("assistant", content_block)
 
     def tool_output_callback(result: ToolResult, tool_use_id: str):
         output_data = {
             "tool_use_id": tool_use_id,
             "output": result.output,
-            "error": result.error
+            "error": result.error,
         }
 
         if result.output:

@@ -1,13 +1,14 @@
 import asyncio
 import os
 from typing import Optional
+
 from anthropic.types.beta import BetaMessageParam
 
-from cupi.computer_use_demo.loop import sampling_loop, APIProvider
-from cupi.logger import ConversationLogger
 from cupi.callbacks import create_callbacks
 from cupi.cli import parse_args
+from cupi.computer_use_demo.loop import APIProvider, sampling_loop
 from cupi.config import Config
+from cupi.logger import ConversationLogger
 
 
 async def run_claude(instruction: str, config: Config) -> None:
@@ -18,7 +19,8 @@ async def run_claude(instruction: str, config: Config) -> None:
     provider = APIProvider.ANTHROPIC
     api_key = os.getenv("ANTHROPIC_API_KEY")
 
-    print(f"""
+    print(
+        f"""
         Starting Claude Computer Use Demo
         ===============================
         Instruction: {instruction}
@@ -26,7 +28,8 @@ async def run_claude(instruction: str, config: Config) -> None:
         Log Directory: {config.log_dir}
         Press Ctrl+C to stop
         ===============================
-    """)
+    """
+    )
 
     # Set up the initial messages
     messages: list[BetaMessageParam] = [
@@ -62,6 +65,7 @@ async def run_claude(instruction: str, config: Config) -> None:
         print(f"\nError during execution: {str(e)}")
         if config.verbose:
             import traceback
+
             print("\nFull traceback:")
             traceback.print_exc()
     finally:

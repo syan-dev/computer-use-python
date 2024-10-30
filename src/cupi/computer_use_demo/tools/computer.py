@@ -3,6 +3,7 @@ import base64
 import io
 from enum import StrEnum
 from typing import Literal, TypedDict
+
 import pyautogui
 from anthropic.types.beta import BetaToolComputerUse20241022Param
 

@@ -1,7 +1,7 @@
 # CUPI (Computer Use Python Installer)
 
 [![PyPI version](https://badge.fury.io/py/cupi.svg)](https://badge.fury.io/py/cupi)
-[![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 CUPI (Computer Use Python Installer) enables seamless integration of Claude AI's computer control capabilities without the need for Docker or virtual machines. Run Claude AI directly on your native operating system with just Python.
@@ -17,9 +17,9 @@ CUPI (Computer Use Python Installer) enables seamless integration of Claude AI's
 
 ## 🔧 Prerequisites
 
-- Python 3.6 or higher
+- Python 3.11 or higher
 - Claude AI API key
-- System permissions for computer control
+- System permissions for your terminal or Python interpreter
 
 ## 📦 Installation
 
@@ -55,14 +55,14 @@ $env:ANTHROPIC_API_KEY="your_api_key_here"
 2. Run CUPI:
 
 ```bash
-cupi "Take a screenshot of this window"
+cupi "Show me the weather in Hanoi"
 ```
 
 ## 💡 Example Use Cases
 
 ```bash
 # Web Research
-cupi "Find the cheapest flights from Vietnam to France"
+cupi "Open chrome and download the latest blog from Paul Graham"
 
 # System Operations
 cupi "Create a new folder named 'projects' and open VS Code there"

@@ -9,9 +9,7 @@ from enum import StrEnum
 from typing import Any, cast
 
 from anthropic import Anthropic, AnthropicBedrock, AnthropicVertex, APIResponse
-from anthropic.types import (
-    ToolResultBlockParam,
-)
+from anthropic.types import ToolResultBlockParam
 from anthropic.types.beta import (
     BetaContentBlock,
     BetaContentBlockParam,
